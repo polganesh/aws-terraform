@@ -1,10 +1,10 @@
 # README #
-This is standard module for creating S3 bucket
-it will create s3 bucket with name s3environment.cost_centre.project.app_service.<10-char-random-string>
+* This is standard module for creating S3 bucket
+*It will create s3 bucket with name s3environment.cost_centre.project.app_service.<10-char-random-string>
 
 ## Required Input Variables ##
 
-variables	|
+variable  	|
 -------------
 environment	|
 cost_centre	|
@@ -16,7 +16,7 @@ app_service	|
 
 ## Optional Input Variables ##
 
-variables	|
+variables	| Notes |
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 acl_for_s3	|default is private. possible values public-read/public-read-write/aws-exec-read/authenticated-read .... for more option refer terraform documentation|
 

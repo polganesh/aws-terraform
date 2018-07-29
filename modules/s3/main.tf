@@ -9,11 +9,9 @@ resource "random_string" "main" {
   override_special = "/@\" "
 }
 
-
-
 resource "aws_s3_bucket" "main" {
   bucket = "s3${var.environment}.${var.cost_centre}.${var.project}.${var.app_service}.${random_string.main.result}"
-  acl    = "${var.s3_acl}"
+  acl    = "${var.acl_for_s3}"
 
   tags {
     Name        = "s3${var.environment}.${var.cost_centre}.${var.project}.${var.app_service}.${random_string.main.result}"

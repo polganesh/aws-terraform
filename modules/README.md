@@ -6,7 +6,7 @@ following are important variable values for any specific IT project
 Value  | Important Note
 ------------- | -------------
 dev  | component for development environment
-cit  | component specific to __C__omponent __I__ntegration __T__esting
+cit  | component specific to ___C___omponent __I__ntegration __T__esting
 sit  | component specific to __S__ystem integration testing
 sit  | component specific to __U__ser integration testing
 

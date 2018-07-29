@@ -92,6 +92,6 @@ sun				|Sunday
 ## maintainance_time ##
 * indication for **time** when this component should undergo maintainance
 * 4 digit fixed.
-* it is 24 hours format. e.g. 1330 i.e. 1 pm 30 minutes
+* it is 24 hours format. e.g. 1330 i.e. 1 pm 30 minutes.
 
 

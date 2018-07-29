@@ -12,19 +12,21 @@ resource "random_string" "main" {
 
 
 resource "aws_s3_bucket" "main" {
-  bucket = "my-tf-test-bucket"
-  acl    = "private"
+  bucket = "s3${var.environment}.${var.cost_centre}.${var.project}.${var.app_service}.${random_string.main.result}"
+  acl    = "${var.s3_acl}"
 
   tags {
-    Name        = "My bucket"
-    Environment = "Dev" /dev/uat/sit/cit/prprd/prod/n
-	Owner=it/retail/investment/wholesale --similar to business unit
-	Project="main project name"
-	ApplicationService=""
-	
-	
-	BuildDate
-	Version
-	
-  }
+    Name        = "s3${var.environment}.${var.cost_centre}.${var.project}.${var.app_service}.${random_string.main.result}"
+    Environment = "{var.environment}"
+	CostCentre="${var.cost_centre}"
+	Project="${var.project}"
+	ApplicationService="${var.app_service}"
+	Region="${var.region}"
+	Compliance="${var.compliance}"
+	Confidentiality="${var.confidentiality}"
+	VersionId="${var.version_id}"
+	BuildDate="${var.build_date}"
+	MaintainanceDay="${var.maintainance_day}"
+	MaintainanceTime="${var.maintainance_time}"
+ }
 }

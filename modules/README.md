@@ -1,7 +1,8 @@
 # README #
 following are important variable values for any specific IT project
 
-## environment ## 
+## environment ##
+* it represents envriornment for which this component made for. 
 * length 1 to 3 char
 * all small case letters
 * Possible values

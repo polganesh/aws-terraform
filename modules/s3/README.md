@@ -5,19 +5,17 @@
 ## Required Input Variables ##
 
 variable  	|
--------------
+------------|
 environment	|
 cost_centre	|
 project		|
 app_service	|
 
-{var.environment}.${var.cost_centre}.${var.project}.${var.app_service}
-
 
 ## Optional Input Variables ##
 
 variables	| Notes |
-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
 acl_for_s3	|default is private. possible values public-read/public-read-write/aws-exec-read/authenticated-read .... for more option refer terraform documentation|
 
 

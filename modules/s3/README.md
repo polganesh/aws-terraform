@@ -21,7 +21,7 @@ acl_for_s3	|default is private. possible values public-read/public-read-write/aw
 ## Tags added to S3 Bucket ##
 
 Tag Name			|
---------------------
+--------------------|
 Name				|
 Environment 		|
 CostCentre			|

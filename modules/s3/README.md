@@ -18,4 +18,19 @@ variables	| Notes |
 ------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
 acl_for_s3	|default is private. possible values public-read/public-read-write/aws-exec-read/authenticated-read .... for more option refer terraform documentation|
 
+## Tags added to S3 Bucket ##
 
+Tag Name			|
+--------------------
+Name				|
+Environment 		|
+CostCentre			|
+Project				|
+ApplicationService	|
+Region				|
+Compliance			|
+Confidentiality		|
+VersionId			|
+BuildDate			|
+MaintainanceDay		|
+MaintainanceTime	|

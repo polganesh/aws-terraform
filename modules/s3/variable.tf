@@ -48,15 +48,24 @@ variable "build_date"{
 	default=""
 }
 
+variable "maintainance_time"{
+	description="defines time  on which maintainance allowed in 24hr format hhmm .e.g. 1330 i.e. 1 pm 30 minutes"
+	default=""
+}
+
 variable "maintainance_day"{
 	description="defines day on which maintainance allowed. mon/tue/wed/thu/fri/sat/sun"
 	default="sun"
 }
 
-variable "maintainance_day"{
-	description="defines time  on which maintainance allowed in 24hr format hhmm .e.g. 1330 i.e. 1 pm 30 minutes"
+variable "acl_for_s3"{
+	description=""
 	default=""
 }
+
+
+
+
 
 
 

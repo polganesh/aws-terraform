@@ -57,3 +57,8 @@ variable "maintainance_day"{
 	description="defines day on which maintainance allowed. mon/tue/wed/thu/fri/sat/sun"
 	default="sun"
 }
+
+variable "es_version"{
+	description="version of elastic search"
+	default=""
+}

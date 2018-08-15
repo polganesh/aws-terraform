@@ -78,33 +78,35 @@ variable "es_instance_type"{
 	default="m4.large.elasticsearch"
 }
 
-variable es_instance_count{
+variable "es_instance_count"{
 	description="total number of instances in cluster. if es_zone_awareness is true then we need to select it as even number"
 	default="1"
 }
 
-variable dedicated_master_enabled{
+variable "dedicated_master_enabled"{
 	description="by default it is false."
 	default="false"
 }
 
-variable dedicated_master_count{
+variable "dedicated_master_count"{
 	description="if dedicated_master_enabled then it can be 3 or 5"
 	default=""
 }
 
-variable dedicated_master_type{
+variable "dedicated_master_type"{
 	description="type of master"
 	default=""
 }
 
 # EBS Options
-variable ebs_volume_size{
+variable "ebs_volume_size"{
 	description="size of EBS volume"
 	default=""
 }
 
-variable ebs_volume_type{
+variable "ebs_volume_type"{
 	description="volume type. General purpose, PIOPS, Magentic."
 	default="gp2"
 }
+
+variable "access_policies" {}

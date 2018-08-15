@@ -1,6 +1,7 @@
 resource "aws_elasticsearch_domain" "main" {
-  domain_name           = "es-${var.environment}-${var.cost_centre}-${var.project}-${var.app_service}-${var.seq_id}"
+  domain_name           = "${var.environment}-${var.cost_centre}-${var.project}-${var.app_service}-${var.seq_id}"
   elasticsearch_version = "${var.es_version}"
+  access_policies="${var.access_policies}"
   
   snapshot_options {
     automated_snapshot_start_hour = "${var.automated_snapshot_start_hour}"
@@ -25,26 +26,17 @@ resource "aws_elasticsearch_domain" "main" {
   }
 
   tags {
-    Domain        		= "es-${var.environment}-${var.cost_centre}-${var.project}-${var.app_service}-${var.seq_id}"
-    Environment 		= "${var.environment}"
-	CostCentre			="${var.cost_centre}"
-	Project				="${var.project}"
-	ApplicationService	="${var.app_service}"
-	Region				="${var.region}"
-	Compliance			="${var.compliance}"
-	Confidentiality		="${var.confidentiality}"
-	VersionId			="${var.version_id}"
-	BuildDate			="${var.build_date}"
-	MaintainanceDay		="${var.maintainance_day}"
-	MaintainanceTime	="${var.maintainance_time}"
+    Domain        		= 	"${var.environment}-${var.cost_centre}-${var.project}-${var.app_service}-${var.seq_id}"
+    Environment 		= 	"${var.environment}"
+	CostCentre			=	"${var.cost_centre}"
+	Project				=	"${var.project}"
+	ApplicationService	=	"${var.app_service}"
+	Region				=	"${var.region}"
+	Compliance			=	"${var.compliance}"
+	Confidentiality		=	"${var.confidentiality}"
+	VersionId			=	"${var.version_id}"
+	BuildDate			=	"${var.build_date}"
  }
- 
-  
-  
-  
-  # cluster_config {
-  #  instance_type = "r3.large.elasticsearch"
-  # }
   
   #advanced_options {
   #  "rest.action.multi.allow_explicit_index" = "true"

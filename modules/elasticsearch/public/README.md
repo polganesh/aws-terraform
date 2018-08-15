@@ -1,6 +1,6 @@
 # README #
 * This is standard module for creating public facing Elastic Search with Kibana in  AWS.
-* It will create Elastic Search Domain with Name  bucket with name <environment>-<cost_centre>-<project>-<app_service>-<seq_id>
+* It will create Elastic Search Domain with Name <environment>-<cost_centre>-<project>-<app_service>-<seq_id>
 
 
 ## Required Input Variables ##

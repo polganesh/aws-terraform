@@ -1,6 +1,6 @@
 # README #
 * This is standard module for creating S3 bucket
-*It will create s3 bucket with name s3environment.cost_centre.project.app_service.<10-char-random-string>
+* It will create s3 bucket with name s3environment.cost_centre.project.app_service.<10-char-random-string>
 
 ## Required Input Variables ##
 

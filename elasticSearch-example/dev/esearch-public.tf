@@ -32,7 +32,7 @@ module "esearch-public"{
 					"Action": "es:*",
 					"Principal": "*",
 					"Effect": "Allow",
-					"Resource": "arn:aws:es:${data.aws_region.current.name}:${data.aws_caller_identity.current.account_id}:domain/dev-it-infra-test-001/*",
+					"Resource": "arn:aws:es:${data.aws_region.current.name}:${data.aws_caller_identity.current.account_id}:domain/dev-it-infra-test-1/*",
 					"Condition": {
 						"IpAddress": {"aws:SourceIp": ["88.98.242.199/32"]}
 					}

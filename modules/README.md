@@ -1,6 +1,6 @@
 # README #
-Following are important variable and their possible values for creating AWS components with these modules.
-Although it is not mandetory to follow exactly same values but these values help to set some guidelines and standardization for various AWS components.
+Following are important variable and their possible values for creating AWS services with these modules.
+Although it is not mandetory to follow exactly same values but these values help to set some guidelines and standardization for creating various AWS services.
 
 ## environment ##
 * It represents envriornment for which this component made for. 

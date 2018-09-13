@@ -77,10 +77,11 @@ public			| accessible to everyone
 * we need to change this value for each time when we are building component
 * format ddmmyyyy e.g. 27122017"
 
-## maintainance_day ##
-* indication for **day** when this component should undergo maintainance
+## maintenance_day ##
+* indication for **day** when this component should undergo maintenance
 * 3 char fixed
 Possible Values | Notes
+-------------------------
 mon				|Monday
 tue				|Tuesday
 wed				|Wednesday
@@ -89,8 +90,8 @@ fri				|Friday
 sat				|Saturday
 sun				|Sunday
 
-## maintainance_time ##
-* indication for **time** when this component should undergo maintainance
+## maintenance_time ##
+* indication for **time** when this component should undergo maintenance
 * 4 digit fixed.
 * it is 24 hours format. e.g. 1330 i.e. 1 pm 30 minutes.
 

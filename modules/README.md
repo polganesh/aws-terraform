@@ -67,7 +67,7 @@ marketing				|mkt|
 
 ## confidentiality ##
 Possbile values |Notes
---------------------------------------------------------------------------------
+----------------|---------------------------------------------------------------
 confidential 	| confidential. access only to specific group of resources in org.
 internal 		| not available to public
 public			| accessible to everyone
@@ -81,7 +81,7 @@ public			| accessible to everyone
 * indication for **day** when this component should undergo maintenance
 * 3 char fixed
 Possible Values | Notes
--------------------------
+----------------|--------
 mon				|Monday
 tue				|Tuesday
 wed				|Wednesday

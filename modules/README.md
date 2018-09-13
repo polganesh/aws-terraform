@@ -66,6 +66,7 @@ marketing				|mkt|
 * possible values **pci** or **none**
 
 ## confidentiality ##
+
 Possbile values |Notes
 ----------------|---------------------------------------------------------------
 confidential 	| confidential. access only to specific group of resources in org.
@@ -80,6 +81,7 @@ public			| accessible to everyone
 ## maintenance_day ##
 * indication for **day** when this component should undergo maintenance
 * 3 char fixed
+
 Possible Values | Notes
 ----------------|--------
 mon				|Monday

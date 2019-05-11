@@ -8,5 +8,5 @@ variable "aws-secret-key"{
 
 
 variable "region"{
-	default="eu-west-1"
+	default="eu-central-1"
 }
